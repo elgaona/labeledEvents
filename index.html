@@ -1,0 +1,32 @@
+<html>
+
+<head>
+
+<script defer src="https://cdn.amplitude.com/libs/analytics-browser-2.7.3-min.js.gz"></script>
+<script defer src="https://cdn.amplitude.com/libs/plugin-autocapture-browser-0.9.0-min.js.gz"></script>
+
+</head>
+
+<body>
+
+	<button type="button" onclick="button()">CLICK ME!</button>
+
+<script type="module">
+  window.amplitude.init("6f0bfa21ca6c7028a5085af9117bf72c");
+  const autocapturePlugin = window.amplitudeAutocapturePlugin.plugin();
+  window.amplitude.add(autocapturePlugin);
+</script>
+
+	<script>
+		function button() {
+
+		}
+
+	</script>
+
+	<h1> WELCOME! </h1>
+
+</body>
+
+
+</html>
